@@ -1,0 +1,113 @@
+@import './variables.scss';
+
+html {
+    height: 100% !important;
+}
+
+body {
+    /* Location of the image */
+    background-image: url('../images/background.png');
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based
+     on the container's size */
+    background-size: cover;
+    /* Set a background color that will be displayed
+     while the background image is loading */
+    background-color: $tempColor;
+    /* Fixed font family */
+    font-family: Arial;
+
+}
+
+.border-0 {
+    border: 0px;
+}
+
+.theme-color {
+    background-color: $mainColor;
+    border-color: $mainColor;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.password__show {
+    cursor: pointer;
+    position: absolute;
+    bottom: 11px;
+    height: 16px;
+    right: 0;
+    background: $secondary;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: .8em;
+}
+
+.card {
+    background-color: rgba(245, 245, 245, 0.4);
+}
+
+.card-header .card-footer {
+    opacity: 1
+}
+
+.note1 {
+    color: $white;
+    font-size: 12px;
+    font-style: italic;
+}
+
+input[type=file] {
+    width: 1px;
+    visibility: hidden;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: $mainColor;
+    color: $white;
+    font-size: 12px;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td,
+.table-striped>tbody>tr:nth-child(even)>th {
+    background-color: $white;
+    color: black;
+    font-size: 12px;
+}
+
+.subraData {
+    height: 160px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.thisborder {
+    border-top: 1px solid $black;
+    border-right: 1px solid $black;
+    border-bottom: 1px solid $black;
+    border-left: 1px solid $black;
+}
+
+.no-js .loading {
+   display: none;
+}
+
+.js .loading {
+   display: block;
+   position: center;
+   margin-top: 120px;
+}
+
+.js #my_iframe {
+   visibility: hidden;
+}
