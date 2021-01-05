@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "alertifyjs": "^1.11.2",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootbox": "^4.4.0",
     "dotenv-webpack": "^1.5.7",
     "pad": "^2.2.1",
